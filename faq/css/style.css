@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hader {
+    position: relative;
+    width: 100%;
+}
+
+.hader .style_nav {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+.hader .style_nav .style_brand {
+    padding-top: 23px;
+}
+
+
+/* Shutter Out Horizontal */
+
+.navbar-default .navbar-nav > li > a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    background-color: transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-bottom: 1px solid transparent;
+    color: white!important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav > li > a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    r-bottom: 2px solid #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    color: #000;
+    transition: ease 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+    color: #000;
+    transition: ease 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover:before,
+.navbar-default .navbar-nav > li > a:focus:before,
+.navbar-default .navbar-nav > li > a:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: ease 0.5s;
+}
+
+.hader .nav.navbar-nav.pull-right {
+    margin-top: 2%;
+}
+
+.video-part-content .carousel-caption h1 {
+    font-size: 50px;
+}
+
+.video-part-content .carousel-caption p {
+    font-size: 20px;
+}
+
+.affix {
+    width: 100%;
+    transition: ease 0.5s;
+    background: rgba(11, 25, 45, 0.93)!important;
+    opacity: 0.8;
+    border-bottom: 2px solid #5775bd !important;
+}
+
+.navbar-default.affix .navbar-nav > li > a {
+    color: #333;
+}
+
+.btn-info {
+    background: #5674bc;
+    border: 1px solid #5674bc;
+    border-radius: 0px;
+    transition: ease 0.5s;
+}
+
+.btn-info {
+    color: #5674bc;
+    transition: ease 0.5s;
+}
+
+.full-width {
+    width: 100%;
+    float: left;
+}
+
+.video-part-content .btn-info:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: ease 0.5s;
+    background: transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 6px;
+    padding-top: 15px;
+}
+
+.btn-info {
+    background: #5674bc none repeat scroll 0 0;
+    border: 1px solid #5674bc;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #132134;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+@media only screen and (max-width:767px) and (min-width:103px) {
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #132134;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 96%;
+    top: -22%;
+    }
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.dropdown-content a:hover {
+    color: #FFA726;
+    text-decoration: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #132134!important;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* start  about us style */
+
+.parallax {
+    color: #fff;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.pageTitle .inner.title {
+    padding: 150px 0 60px 0;
+}
+
+.parallax .inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgba(11, 25, 45, 0.8);
+}
+
+.pageTitle .inner.title h1 {
+    font-size: 3em;
+    position: relative;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pageTitle .inner.title h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #ffa726;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/*  end  about us  css*/
+
+
+/* start faq style */
+
+.sectionBase {
+    margin-bottom: 100px;
+}
+
+.sectionTop {
+    margin-top: 100px;
+}
+
+.vn-click {
+    width: 100%;
+    font-weight: bold;
+    color: #666677;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 1px solid #666677;
+    padding-top: 20px;
+}
+
+.vn-click i {
+    font-sizE: 25px;
+    color: #666677;
+    float: right;
+    color: #ACD4CE;
+}
+
+.vn-info {
+    display: none;
+    text-align: left;
+    color: #666677;
+    padding: 30px 20px
+}
+
+.head {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    line-height: normal;
+    margin-bottom: 3px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    padding: 15px 15px 15px 40px;
+    background: rgb(243, 248, 250);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: rgb(35, 52, 75);
+}
+
+.head.active {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 167, 38);
+}
+
+.head.active::before {
+    content: "";
+    color: inherit;
+    font-family: FontAwesome;
+}
+
+.head:hover {
+    color: rgb(255, 167, 38);
+    transition: all 0.2s ease-in;
+}
+
+.head::before {
+    content: "";
+    font-family: FontAwesome;
+    color: rgb(255, 167, 38);
+    top: 18px;
+    left: 14px;
+    position: absolute;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.accordionCnt {
+    margin-bottom: 20px;
+    margin-top: -3px;
+    overflow: hidden;
+    padding: 15px 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.itemList li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.itemList i {
+    color: rgb(255, 167, 38);
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+
+/*  end faq style*/
+
+
+/* start footer section */
+
+
+/*  */
+
+.mastFooter {
+    position: relative;
+    text-align: left;
+    color: #abacb1;
+    overflow: hidden;
+    background: url(../img/bg_parallax_05.jpg) no-repeat 50% 50% / cover fixed;
+}
+
+.mastFooter .inner {
+    padding: 60px 0;
+    background: rgba(11, 25, 45, 0.85);
+}
+
+.mastFooter .banner {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 45px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.banner h3 {
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.banner .button {
+    margin-top: 15px;
+}
+
+.mastFooter .logo {
+    margin-bottom: 30px;
+}
+
+.mastFooter .copyright {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.mastFooter h6 {
+    color: #fff;
+    margin: 0 0 40px 0;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4
+}
+
+.mastFooter .links,
+.mastFooter .contact {
+    margin: 0;
+}
+
+.mastFooter a {
+    color: #abacb1;
+}
+
+.links,
+.contact {
+    list-style-type: none;
+}
+
+.links li,
+.contact li {
+    margin-top: 10px;
+}
+
+.links li a:hover {
+    text-decoration: none;
+    color: #ffa726;
+    text-decoration: none;
+    -o-transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+}
+
+.mastFooter .social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.mastFooter .social a {
+    color: #ffa726;
+}
+
+.mastFooter .social a:hover {
+    color: white;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 28px;
+    background: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.button.primary {
+    background: #ffa726;
+    color: #fff;
+}
+
+.button.primary:hover {
+    background: #0b192d;
+    color: #fff;
+    text-decoration: none;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.scroll-effect-hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+// override animate CSS transform - optional
+@keyframes fadeInDown {
+    0% {
+        transform: translate3d(0, -10%, 0)
+    }
+}

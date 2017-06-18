@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+
+     <!-- start header section -->
+    <div class="hader">
+        <nav class="navbar navbar-default navbar-fixed-top style_nav" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand style_brand" href="../Shopno IT/index.html"><img class="img-responsive" src="img/logo.png"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="../Shopno IT/index.html">HOME</a>
+
+                        </li>
+                        <li class="dropdown"><a href="#">PAGES <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content" data-wow-duration="0.8s">
+                                <a href="../services/index_services.html">Services</a>
+                                <a href="../faq/index.html">Faq</a>
+                                <a href="../404/index.html">Error Page</a>
+
+                            </div>
+                        </li>
+
+                        <li class="dropdown"><a href="../portfolio/index.html">PORTFOLIO</a>
+
+                        </li>
+                        <li class="dropdown"><a href="#">Blog <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content" data-wow-duration="0.8s">
+                                <a href="../blog1/index.html">Blog Masonry</a>
+                                <a href="../blog2/index.html">Blog With Sidebar</a>
+
+
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="../contact/index.html">CONTACT</a>
+
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    <!-- end header section -->
+    <!--======================================================================================================= -->
+    <!--  -->
+
+    <div class="pageTitle parallax" style="background-image: url(img/bg_parallax_04.jpg)">
+        <div class="inner title">
+            <div class="container">
+                <h1>Contact us</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+
+
+    <!-- start contact form section -->
+    <!--  -->
+    <section class="container sectionBase sectionTop">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="msgForm">
+                    <div id="successContact">
+                        <p class="alert success"></p>
+                    </div>
+                    <div id="errorContact">
+                        <p class="alert error"></p>
+                    </div>
+                    <form method="post" action="contact.php" name="contactform" id="contactform">
+
+                        <input name="name" type="text" id="name" size="30" class="formControl" value="" placeholder="Your name" required="">
+
+                        <input name="email" type="email" id="email" size="30" class="formControl" value="" placeholder="Your email" required="">
+
+                        <input name="subject" type="text" id="subject" size="30" class="formControl" value="" placeholder="Subject" required="">
+
+                        <div class="add">
+                            <div class="msg">
+                                <textarea name="comments" cols="40" rows="3" id="comments" class="formControl" placeholder="Your message" required=""></textarea>
+                            </div>
+
+                            <button type="submit" class="button primary dark" id="submitContactForm">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="companyInfo mBase25">
+                    <h5>Contact info</h5>
+                    <ul>
+                        <li><i class="fa fa-map fa-fw"></i> The Hayword House, no. 90, London, S02L, UK</li>
+                        <li><i class="fa fa-envelope fa-fw"></i> <a href="">contact@mycompany.com</a></li>
+                        <li><i class="fa fa-phone fa-fw"></i> +44 7893 201</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end contact form section -->
+
+    <!-- start map section -->
+    <div id="map" data-scroll-effect="fadeInDown">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14604.24918864871!2d90.37013684999998!3d23.780795849999997!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1495171017959" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!--Ebd map section-->
+    <footer class="mastFooter">
+        <div class="inner">
+            <!-- START banner -->
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h3>Take control of your ideas</h3>
+                            <p>Drop us a line today and we’ll get back to you with a custom business proposition</p>
+                        </div>
+                        <div class="col-sm-4 rightAlign xsAlignReset">
+                            <a href="../404/index.html" class="button primary large">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END banner -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="logo">
+                            <a href="../Shopno IT/index.html"><img src="img/logo.png" data-rjs="2" alt="My Company name"></a>
+                        </div>
+                        <p class="copyright">© Shopno IT 2017. All rights reserved.</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>Links</h6>
+                        <ul class="links">
+                            <li><a href="../404/index.html">About us</a></li>
+                            <li><a href="../blog1/index.html">Latest news</a></li>
+                            <li><a href="../404/index.html">Our projects</a></li>
+                            <li><a href="../services/index_services.html">Services</a></li>
+                            <li><a href="../contact/index.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>Find us here</h6>
+                        <ul class="contact">
+                            <li>
+                                <i class="fa fa-envelope"></i> office@mycompany.com
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i> +5 6800 377 887
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i> 23 Park Lane Terrace, SW03N, London, UK
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>Social</h6>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/collections/featured"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  -->
+
+
+    <!-- End footer section -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfmIS-e8zVp8QdjFHBzH8Ad0mM0RQWwFs&callback=initMap">
+    </script>
+    <!-- end map section -->
+
+
+</body>
+
+</html>
